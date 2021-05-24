@@ -1,9 +1,11 @@
-<div class="ubuntu-cont d-flx j-cont-space-bet" [ngStyle]='{"background-image": background}' (contextmenu)='onRightClick($event)' >
+<div class="ubuntu-cont d-flx j-cont-space-bet" [ngStyle]='{"background-image": background}'
+  (contextmenu)='onRightClick($event)'>
   <app-navbar></app-navbar>
   <ng-container *ngFor='let app of appsOpen'>
     <app-webview *ngIf='app === availableApps.CHROME' [config]='chromeWebviewConfig'></app-webview>
     <app-webview *ngIf='app === availableApps.VSCODE' [config]='vsCodeWebviewConfig'></app-webview>
     <app-change-background *ngIf='app === availableApps.SETTINGS'></app-change-background>
+    <app-terminal *ngIf='app === availableApps.TERMINAL'></app-terminal>
   </ng-container>
   <div class="apps-cont height-100 d-flx flx-d-clm">
     <div (dblclick)='openApp(availableApps.CHROME)' class="app d-flx flx-d-clm j-cont-cen a-items-c"

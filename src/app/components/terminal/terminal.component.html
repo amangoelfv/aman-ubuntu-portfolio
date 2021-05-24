@@ -1,0 +1,27 @@
+<app-window title="aman@hp: ~/ubuntu-portfolio" [template]='terminal' (closed)='closeApp()'>
+
+  <ng-template #terminal>
+    <div (click)='clickAnywhere()' class="terminal-cont width-100 height-100">
+      <ng-container *ngFor='let query of history'>
+        <div class="history d-flx a-items-c">
+          <div class='green  font-bolder'>aman@hp</div>
+          <div class='font-bolder'>:</div>
+          <div class='blue font-bolder'>~</div>
+          <div class='font-bolder input-placeholder'>$ </div>
+          <div>{{query.query}}</div>
+        </div>
+        <div class="history">{{query.response}}</div>
+      </ng-container>
+      <div class="input-cont d-flx a-items-c">
+        <div class="input-placeholder d-flx font-bolder a-items-c">
+          <div class='green'>aman@hp</div>
+          <div>:</div>
+          <div class='blue'>~</div>
+          <div>$</div>
+        </div>
+        <div>{{input.value}}</div>
+        <div class='cursor-block'></div>
+        <input [formControl]='input' #inputField class='input' maxlength="50">
+      </div>
+    </div>
+  </ng-template>

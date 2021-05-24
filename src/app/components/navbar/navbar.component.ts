@@ -56,6 +56,11 @@ export class NavbarComponent implements OnInit {
     icon: 'https://vivek9patel.github.io/themes/Yaru/apps/gnome-control-center.png',
     name: 'Settings',
     slug: Apps.SETTINGS
+  },
+  {
+    icon: 'https://vivek9patel.github.io/themes/Yaru/apps/bash.png',
+    name: 'Terminal',
+    slug: Apps.TERMINAL
   }
 ]
 }

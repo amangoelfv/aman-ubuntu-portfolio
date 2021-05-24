@@ -6,6 +6,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop'
 import { MatIconModule } from '@angular/material/icon';
 import { WebviewComponent } from './webview/webview.component';
 import { ChangeBackgroundComponent } from './change-background/change-background.component';
+import { TerminalComponent } from './terminal/terminal.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,17 +15,20 @@ import { ChangeBackgroundComponent } from './change-background/change-background
     NavbarComponent,
     WindowComponent,
     WebviewComponent,
-    ChangeBackgroundComponent
+    ChangeBackgroundComponent,
+    TerminalComponent
   ],
   imports: [
     CommonModule,
     DragDropModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule
   ],
   exports: [
     NavbarComponent,
     WebviewComponent,
-    ChangeBackgroundComponent
+    ChangeBackgroundComponent,
+    TerminalComponent
   ]
 })
 export class ComponentsModule { }

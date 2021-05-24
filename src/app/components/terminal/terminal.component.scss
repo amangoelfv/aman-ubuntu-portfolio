@@ -1,0 +1,45 @@
+@import "../../../styles/partials/colors";
+@import "../../../styles/partials/layout";
+
+.terminal-cont {
+  background-color: $terminalBg;
+  padding: $small 0;
+  .history {
+    margin-bottom: $small;
+  }
+  .green {
+    color: $terminalGreen;
+  }
+  .blue {
+    color: $terminalBlue;
+    font-size: 18px;
+  }
+  .input-placeholder {
+    margin-right: $small;
+  }
+  .input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    position: relative;
+    font-size: 16px;
+    width: 0%;
+  }
+  .cursor-block {
+    height: 16px;
+    width: 8px;
+    background-color: $white;
+    animation: blink 1s step-end infinite;
+    float: left;
+  }
+
+  @keyframes blink {
+    0% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #fff;
+    }
+  }
+}

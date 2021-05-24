@@ -4,9 +4,8 @@
 
 .window-cont {
 
-  border-radius: 4px;
+  border-radius: $small;
   overflow: hidden;
-  z-index: 10;
   transition: 200ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: $inactiveWindow;
   border-radius: $xSmall;
@@ -18,7 +17,7 @@
   .top-bar {
     border-radius: 4px;
     background-color: $windowHeader;
-    padding: $small;
+    padding: $medium;
     position: relative;
     .icons-cont {
       position: absolute;

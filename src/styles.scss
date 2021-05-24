@@ -57,7 +57,9 @@ html {
 .font-bold {
   font-weight: $bold;
 }
-
+.z-index-top {
+  z-index: 100000;
+}
 .font-bolder {
   font-weight: $bolder;
 }
