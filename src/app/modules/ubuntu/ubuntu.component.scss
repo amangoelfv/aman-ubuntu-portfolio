@@ -1,0 +1,34 @@
+@import "../../../styles/partials/colors";
+@import "../../../styles/partials/layout";
+
+.ubuntu-cont {
+  background: url("/assets/images/wallpaper1.png") no-repeat center center;
+  width: 100vw;
+  height: calc(100vh - 30px);
+  background-size: cover;
+  overflow: hidden;
+  .apps-cont {
+    flex-wrap: wrap-reverse;
+    margin-left: auto;
+    .app {
+      padding: $xSmall;
+      width: $iconWidth;
+      height: $iconHeight;
+      border-radius: $xSmall;
+      .app-icon {
+        width: $xxxLarge;
+        height: $xxxLarge;
+        margin-bottom: $small;
+      }
+      .app-name {
+        font-size: 12px;
+      }
+      &:hover {
+        background: rgba($white, 0.2);
+      }
+      &:active {
+        background: rgba($primaryColor, 0.4);
+      }
+    }
+  }
+}

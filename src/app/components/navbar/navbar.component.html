@@ -1,0 +1,11 @@
+<div class="navbar-cont d-flx flx-d-clm j-cont-space-bet height-100 a-items-c">
+  <div class="apps-cont">
+    <div class="app d-flx a-items-c j-cont-cen" *ngFor='let app of apps' [ngClass]='{"active": checkIfOpen(app.slug)}'
+      (click)='openApp(app.slug)'>
+      <img [src]='app.icon' [alt]='app.name' class='icon'>
+    </div>
+  </div>
+  <div class="app d-flx j-cont-cen">
+    <img src="https://vivek9patel.github.io/themes/Yaru/system/view-app-grid-symbolic.svg" class="menu-icon icon">
+  </div>
+</div>

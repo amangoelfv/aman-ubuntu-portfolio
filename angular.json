@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "ubuntu-portfolio"
+  "defaultProject": "ubuntu-portfolio",
+  "cli": {
+    "analytics": false
+  }
 }

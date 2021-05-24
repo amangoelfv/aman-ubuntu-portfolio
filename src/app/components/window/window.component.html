@@ -1,0 +1,19 @@
+<div class="drag-boundary position-absolute">
+  <div [style.width]='width' [style.height]='height' class="window-cont" cdkDrag cdkDragBoundary=".drag-boundary"
+    [cdkDragFreeDragPosition]="dragPosition">
+    <div class="top-bar d-flx j-cont-cen" cdkDragHandle>
+      <div class="app-name font-bold">Google Chrome</div>
+      <div class="icons-cont">
+        <mat-icon class='icon d-flx a-items-c'>minimize</mat-icon>
+        <mat-icon class='icon' *ngIf='!maximized' (click)='changeWindowSize()'>crop_square</mat-icon>
+        <svg *ngIf='maximized' (click)='changeWindowSize()' fill='white' class='icon' viewBox="0 0 24 24">
+          <path d="M4 8h4V4h12v12h-4v4H4V8m12 0v6h2V6h-8v2h6M6 12v6h8v-6H6z" />
+        </svg>
+        <mat-icon class='icon close' (click)='closeWindow()'>close</mat-icon>
+      </div>
+    </div>
+    <div class="content">
+      <ng-container *ngTemplateOutlet='template'></ng-container>
+    </div>
+  </div>
+</div>

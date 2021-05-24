@@ -1,0 +1,17 @@
+@import '../../../styles/partials/colors';
+@import '../../../styles/partials/layout';
+
+.header-cont {
+  background: $dark;
+  color: $white;
+  div {
+    height: 30px;
+    box-sizing: border-box;
+    padding: $small $medium;
+    font-size: 14px;
+    &:hover {
+      border-bottom: 2px solid $primaryColor;
+    }
+
+  }
+}

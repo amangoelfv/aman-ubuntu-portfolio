@@ -1,0 +1,45 @@
+@import "../../../styles/partials/colors";
+@import "../../../styles/partials/layout";
+
+.navbar-cont {
+  background: rgba($black, 0.5);
+  .active {
+    &::before {
+      content: '';
+      width: $xSmall;
+      height: $xSmall;
+      border-radius: 50%;
+      background-color: $primaryColor;
+      position: absolute;
+      left:5px;
+      animation: enter .4s;
+    }
+  }
+    .app {
+      width: $xxxxLarge;
+      height: $xxxxLarge;
+      margin: $small $xxxSmall;
+      &:hover {
+        background-color: rgba($white, 0.1);
+        border-radius: $xSmall;
+      }
+    }
+
+  .menu-icon {
+    margin: $small 0;
+  }
+}
+.icon {
+  width: $xxLarge;
+  height: $xxLarge;
+
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

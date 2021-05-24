@@ -1,0 +1,11 @@
+<div class="ubuntu-cont d-flx j-cont-space-bet">
+  <app-navbar></app-navbar>
+  <app-chrome *ngIf='checkIfOpen(availableApps.CHROME)'></app-chrome>
+  <div class="apps-cont height-100 d-flx flx-d-clm">
+    <div (click)='openApp(availableApps.CHROME)' class="app d-flx flx-d-clm j-cont-cen a-items-c"
+      *ngFor="let app of apps">
+      <img [src]='app.icon' [alt]="app.name" class="app-icon">
+      <div class="app-name">{{app.name}}</div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,381 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$ubuntu-portfolio-primary: mat-palette($mat-indigo);
+$ubuntu-portfolio-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$ubuntu-portfolio-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$ubuntu-portfolio-theme: mat-light-theme((
+  color: (
+    primary: $ubuntu-portfolio-primary,
+    accent: $ubuntu-portfolio-accent,
+    warn: $ubuntu-portfolio-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($ubuntu-portfolio-theme);
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+// Use import for scss (containing css classes) with caution, leads to code duplication. Use it only for mixins variables etc
+@import "../src/styles/partials/colors";
+@import "../src/styles/partials/fonts";
+@import "../src/styles/partials/screen-sizes";
+@import "../src/styles/partials/layout";
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  user-select: none;
+  font-family: 'Ubuntu', sans-serif;
+  color: $white;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-bold {
+  font-weight: $bold;
+}
+
+.font-bolder {
+  font-weight: $bolder;
+}
+.font-boldest {
+  font-weight: $boldest;
+}
+
+.text-color-dark {
+  color: $dark;
+}
+.text-color-white {
+  color: $white;
+}
+
+.background-light-primary {
+  background-color: $primaryColorLight;
+}
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+.error-message {
+  color: $darkRed;
+  font-size: $secondary;
+}
+img {
+  max-width: 100%;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.c-not-allowed {
+  cursor: not-allowed;
+}
+
+.text-c {
+  text-align: center;
+}
+.position-fixed {
+  position: fixed;
+}
+.position-absolute {
+  position: absolute;
+}
+.text-right {
+  text-align: right;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.589);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 2s ease;
+}
+.app-container {
+  background-color: $white;
+}
+.app-container-pd {
+  padding: $headerHeight 0 0;
+}
+
+.section-container {
+  padding: $xLarge $small;
+  max-width: 1260px;
+  margin: auto;
+}
+
+.app-lq-container {
+  width: 100%;
+}
+
+.show-mob,
+.show-mob-tab,
+d-block {
+  display: block;
+}
+.show-mob-flx,
+.show-mob-tab-flx {
+  display: flex;
+}
+.show-desk,
+.show-tab-desk,
+.show-desk-flx,
+.show-tab-desk-flx,
+.hide {
+  display: none;
+}
+.text-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.overflow-y-mob {
+  overflow-y: scroll;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+/* flex custom css :: Start */
+.d-flx {
+  display: flex;
+}
+.flx-d-row,
+.flx-d-row-clm {
+  flex-direction: row;
+}
+.flx-d-clm,
+.flx-d-clm-row {
+  flex-direction: column;
+}
+.flx-1 {
+  flex: 1;
+}
+.flx-2 {
+  flex: 2;
+}
+.flx-3 {
+  flex: 3;
+}
+.flx-4 {
+  flex: 4;
+}
+.flx-5 {
+  flex: 5;
+}
+.flx-6 {
+  flex: 6;
+}
+.flx-7 {
+  flex: 7;
+}
+.flx-8 {
+  flex: 8;
+}
+.flx-wrp {
+  flex-wrap: wrap;
+}
+.a-items-start {
+  align-items: flex-start;
+}
+.a-items-c {
+  align-items: center;
+}
+.a-items-e {
+  align-items: flex-end;
+}
+.a-items-b {
+  align-items: baseline;
+}
+.a-items-stretch {
+  align-items: stretch;
+}
+.a-self-stretch {
+  align-self: stretch;
+}
+.j-cont-cen {
+  justify-content: center;
+}
+.j-cont-end {
+  justify-content: flex-end;
+}
+.j-cont-space-bet {
+  justify-content: space-between;
+}
+.flx-gap-16 {
+  gap: $large;
+}
+.flx-gap-32 {
+  gap: $xxLarge;
+}
+/* flex custom css :: End */
+.d-grid {
+  display: grid;
+}
+.d-inline-block {
+  display: inline-block;
+}
+/* heading generic CSS :: Start */
+
+.logo {
+  font-weight: $boldest;
+  font-size: $xxxLarge;
+}
+.section-header {
+  margin-bottom: $xLarge;
+  .section-heading {
+    font-size: $supportText;
+    font-weight: $boldest;
+    margin-bottom: $small;
+  }
+  .section-subheading {
+    color: $mediumGrey;
+    font-size: $secondary;
+  }
+}
+
+.modal-heading {
+  font-size: $blockHeading;
+  font-weight: $bolder;
+}
+.intro-heading {
+  font-size: $supportText;
+  font-weight: $bold;
+}
+.gb-heading {
+  color: $dark;
+  font-size: $blockHeading;
+  font-weight: $bolder;
+  margin: $small 0;
+}
+.description {
+  color: $mediumGrey;
+  font-size: $tertiary;
+  font-weight: $normal;
+  line-height: 16px;
+}
+.light-subheading {
+  color: $lightGrey;
+  font-size: $tertiary;
+  font-weight: $normal;
+  line-height: 16px;
+}
+.sub-heading {
+  color: $dark;
+  font-size: $secondary;
+  font-weight: $normal;
+  line-height: 16px;
+}
+.lb-heading,
+.lb-heading-small {
+  color: $dark;
+  font-size: $secondary;
+  font-weight: $bold;
+  line-height: 18px;
+}
+.lb-sub-heading {
+  color: $lightGrey;
+  font-size: $tertiary;
+  font-weight: $normal;
+  line-height: 16px;
+}
+.para {
+  color: $dark;
+  font-size: $tertiary;
+  line-height: 16px;
+}
+/* heading generic CSS :: End */
+
+.height-100 {
+  height: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+// Hide images if there is no src tag on them
+img:not([src]), img[src="//:0"]
+{
+  opacity: 0;
+}
+
+.image-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media #{$tab-media-query-major} {
+  .section-container {
+    padding: $xxxxLarge $medium;
+    .section-header {
+      .section-heading {
+        font-size: $blockHeading;
+        margin-bottom: $small;
+      }
+      .section-subheading {
+        font-size: $primary;
+      }
+    }
+  }
+  .show-mob {
+    display: none;
+  }
+  .show-tab-desk {
+    display: block;
+  }
+
+  .show-tab-desk-flx {
+    display: flex;
+  }
+}
+@media #{$desk-media-query-major} {
+  .show-desk {
+    display: block;
+  }
+
+  .show-desk-flx {
+    display: flex;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
