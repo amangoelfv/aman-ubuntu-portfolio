@@ -2,7 +2,7 @@
   <div [style.width]='width' [style.height]='height' class="window-cont" cdkDrag cdkDragBoundary=".drag-boundary"
     [cdkDragFreeDragPosition]="dragPosition">
     <div class="top-bar d-flx j-cont-cen" cdkDragHandle>
-      <div class="app-name font-bold">Google Chrome</div>
+      <div class="app-name font-bold">{{title}}</div>
       <div class="icons-cont">
         <mat-icon class='icon d-flx a-items-c'>minimize</mat-icon>
         <mat-icon class='icon' *ngIf='!maximized' (click)='changeWindowSize()'>crop_square</mat-icon>

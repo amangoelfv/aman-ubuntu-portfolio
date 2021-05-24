@@ -4,26 +4,44 @@
 .navbar-cont {
   background: rgba($black, 0.5);
   .active {
+    background-color: rgba($white, 0.1);
     &::before {
-      content: '';
+      content: "";
       width: $xSmall;
       height: $xSmall;
       border-radius: 50%;
       background-color: $primaryColor;
       position: absolute;
-      left:5px;
-      animation: enter .4s;
+      left: 5px;
+      animation: enter 0.4s;
     }
   }
-    .app {
-      width: $xxxxLarge;
-      height: $xxxxLarge;
-      margin: $small $xxxSmall;
-      &:hover {
-        background-color: rgba($white, 0.1);
-        border-radius: $xSmall;
+  .app {
+    width: $xxxxLarge;
+    height: $xxxxLarge;
+    margin: $small $xxxSmall;
+    border-radius: $xSmall;
+    position: relative;
+    .app-name {
+      right: 0;
+      transform: translateX(105%);
+      background-color: rgba($black, 0.5);
+      padding: $small;
+      white-space: nowrap;
+      border-radius: $xSmall;
+      z-index: 10;
+      transition: 0.3s ease;
+      opacity: 0;
+      display: none;
+    }
+    &:hover {
+      background-color: rgba($white, 0.1);
+      .app-name {
+        opacity: 1;
+        display: flex;
       }
     }
+  }
 
   .menu-icon {
     margin: $small 0;
@@ -32,7 +50,6 @@
 .icon {
   width: $xxLarge;
   height: $xxLarge;
-
 }
 
 @keyframes enter {

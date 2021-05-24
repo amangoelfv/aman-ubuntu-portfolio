@@ -1,3 +1,5 @@
 export enum Apps {
-  CHROME = 'chrome'
+  CHROME = 'chrome',
+  VSCODE = 'vscode',
+  SETTINGS = 'settings'
 }

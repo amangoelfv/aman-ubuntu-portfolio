@@ -1,4 +1,5 @@
 import { Component, ElementRef, EventEmitter, HostListener, Input, OnInit, Output, ViewChild } from '@angular/core';
+import { AppActivityService } from 'src/app/services/app-activity.service';
 
 @Component({
   selector: 'app-window',
@@ -8,14 +9,16 @@ import { Component, ElementRef, EventEmitter, HostListener, Input, OnInit, Outpu
 export class WindowComponent implements OnInit {
 
   @Input() template!: any;
+  @Input() title!: string;
   @Output() closed = new EventEmitter();
   constructor(
+    private appActService: AppActivityService
   ) { }
   ngOnInit(): void {
   }
   dragPosition = { x: 0, y: 0 };
-  width = '60%';
-  height = '60%';
+  width = '70%';
+  height = '90%';
   maximized = false;
   changeWindowSize() {
     if (this.maximized) {
@@ -31,8 +34,8 @@ export class WindowComponent implements OnInit {
     this.maximized = true;
   }
   restoreWindow() {
-    this.width = '60%';
-    this.height = '60%'
+    this.width = '70%';
+    this.height = '80%'
     this.maximized = false;
 
   }

@@ -1,0 +1,11 @@
+<app-window title="Settings" [template]='changeBackground' (closed)='closeApp()'>
+
+  <ng-template #changeBackground>
+    <div class="d-flx flx-d-clm a-items-c cont">
+      <img [src]='selectedImage' class='top-image'>
+      <div class="break"></div>
+      <div class="gallery d-flx a-items-c j-cont-cen">
+        <img (click)='setWallpaper(image)' *ngFor='let image of images' [src]='image' class="wallpaper">
+      </div>
+    </div>
+  </ng-template>

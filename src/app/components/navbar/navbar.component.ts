@@ -30,21 +30,32 @@ export class NavbarComponent implements OnInit {
         this.appsOpen.splice(index, 1);
       }
     })
-    console.log(this.appsOpen, "subscription")
   }
   appsOpen : string[]= [];
 
   checkIfOpen(appName: string) {
-    console.log(this.appsOpen, "check")
     return this.appsOpen.includes(appName);
   }
   openApp(appName: string) {
     this.appAct.openApp(appName)
   }
 
-  apps = [{
+  apps = [
+    {
     icon: 'https://vivek9patel.github.io/themes/Yaru/apps/chrome.png',
     name: 'Google Chrome',
     slug: Apps.CHROME
-  }]
+  },
+  {
+    icon: 'https://user-images.githubusercontent.com/674621/71187801-14e60a80-2280-11ea-94c9-e56576f76baf.png',
+    name: 'Visual Studio Code',
+    slug: Apps.VSCODE
+
+  },
+  {
+    icon: 'https://vivek9patel.github.io/themes/Yaru/apps/gnome-control-center.png',
+    name: 'Settings',
+    slug: Apps.SETTINGS
+  }
+]
 }

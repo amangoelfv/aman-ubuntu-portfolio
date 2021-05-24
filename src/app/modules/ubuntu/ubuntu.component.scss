@@ -2,11 +2,12 @@
 @import "../../../styles/partials/layout";
 
 .ubuntu-cont {
-  background: url("/assets/images/wallpaper1.png") no-repeat center center;
+  background:  no-repeat center center;
   width: 100vw;
   height: calc(100vh - 30px);
   background-size: cover;
   overflow: hidden;
+  transition: 1s ease-in-out;
   .apps-cont {
     flex-wrap: wrap-reverse;
     margin-left: auto;
