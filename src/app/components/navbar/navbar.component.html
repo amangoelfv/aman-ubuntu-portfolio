@@ -2,6 +2,7 @@
   <div class="apps-cont">
     <div class="app d-flx a-items-c j-cont-cen" *ngFor='let app of apps' [ngClass]='{"active": checkIfOpen(app.slug)}'
       (click)='openApp(app.slug)'>
+      <img [src]='app.icon' [alt]='app.name' class='icon zoomer position-absolute'>
       <img [src]='app.icon' [alt]='app.name' class='icon'>
       <div class="app-name position-absolute">{{app.name}}</div>
     </div>

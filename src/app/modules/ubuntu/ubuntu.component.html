@@ -9,7 +9,7 @@
   </ng-container>
   <div class="apps-cont height-100 d-flx flx-d-clm">
     <div (dblclick)='openApp(availableApps.CHROME)' class="app d-flx flx-d-clm j-cont-cen a-items-c"
-      *ngFor="let app of apps">
+      *ngFor="let app of apps" [accessKey]="app.icon">
       <img [src]='app.icon' [alt]="app.name" class="app-icon">
       <div class="app-name">{{app.name}}</div>
     </div>
