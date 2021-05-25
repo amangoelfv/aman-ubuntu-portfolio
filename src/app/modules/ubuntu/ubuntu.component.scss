@@ -1,5 +1,6 @@
 @import "../../../styles/partials/colors";
 @import "../../../styles/partials/layout";
+@import "../../../styles/partials/fonts";
 
 .ubuntu-cont {
   background: no-repeat center center;
@@ -31,5 +32,38 @@
         background: rgba($primaryColor, 0.4);
       }
     }
+  }
+  .right-menu {
+    background-color: $windowBg;
+    position: absolute;
+    display: none;
+    padding: $medium 0;
+    width:13rem;
+    border-radius: $small;
+    .section {
+      .divider {
+        height: 1px;
+        width: 30%;
+        background: $windowHighlight;
+        margin: $small auto;;
+      }
+      .disabled {
+        color: $windowDisabled;
+        &:hover {
+          background-color: none;
+        }
+      }
+      .enabled:hover {
+          background-color: $windowHighlight;
+      }
+      .item {
+        padding: $small $xxLarge $small $xLarge;
+        font-weight: $light;
+        font-size: $secondary;
+      }
+    }
+  }
+  .show {
+    display: flex;
   }
 }

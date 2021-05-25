@@ -1,5 +1,5 @@
 <div class="ubuntu-cont d-flx j-cont-space-bet" [ngStyle]='{"background-image": background}'
-  (contextmenu)='onRightClick($event)'>
+  (contextmenu)='onRightClick($event)' (click)='onLeftClick($event)'>
   <app-navbar></app-navbar>
   <ng-container *ngFor='let app of appsOpen'>
     <app-webview *ngIf='app === availableApps.CHROME' [config]='chromeWebviewConfig'></app-webview>
@@ -12,6 +12,13 @@
       *ngFor="let app of apps" [accessKey]="app.icon">
       <img [src]='app.icon' [alt]="app.name" class="app-icon">
       <div class="app-name">{{app.name}}</div>
+    </div>
+  </div>
+  <div #rightMenu class="right-menu flx-d-clm">
+    <div class="section" *ngFor='let section of rightMenuConfig;last as last'>
+      <div class="item" (click)='item.action()' *ngFor='let item of section' [ngClass]='{"disabled": item.disabled, "enabled": !item.disabled}'>
+        {{item.name}}</div>
+      <div class="divider" *ngIf='!last'></div>
     </div>
   </div>
 </div>

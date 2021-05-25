@@ -1,4 +1,4 @@
-<app-window (closed)='closeApp()' [template]='WebView' [title]='config.title'></app-window>
+<app-window (closed)='closeApp()' [template]='WebView' [config]='config'></app-window>
 
 <ng-template #WebView>
   <iframe [src]="getUrl()" class="width-100 height-100" id="chrome-screen" frameborder="0" [title]="config.title"></iframe>

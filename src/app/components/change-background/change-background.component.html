@@ -1,4 +1,4 @@
-<app-window title="Settings" [template]='changeBackground' (closed)='closeApp()'>
+<app-window [config]="windowConfig" [template]='changeBackground' (closed)='closeApp()'>
 
   <ng-template #changeBackground>
     <div class="d-flx flx-d-clm a-items-c cont">

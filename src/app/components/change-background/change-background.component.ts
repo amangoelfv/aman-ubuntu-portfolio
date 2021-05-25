@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AppActivityService } from 'src/app/services/app-activity.service';
 import { WallpaperService } from 'src/app/services/wallpaper.service';
 import { Apps } from 'src/app/shared/enums/apps.enum';
+import { IWindowConfig } from '../window/window.component';
 
 @Component({
   selector: 'app-change-background',
@@ -15,6 +16,9 @@ export class ChangeBackgroundComponent implements OnInit {
     private wallpaperService: WallpaperService
   ) { }
 
+  windowConfig: IWindowConfig = {
+    title: 'Settings'
+  }
   ngOnInit(): void {
     this.selectedImage = this.images[0]
 

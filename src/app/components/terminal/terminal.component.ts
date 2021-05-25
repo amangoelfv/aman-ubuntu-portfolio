@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { AppActivityService } from 'src/app/services/app-activity.service';
 import { Apps } from 'src/app/shared/enums/apps.enum';
+import { IWindowConfig } from '../window/window.component';
 
 @Component({
   selector: 'app-terminal',
@@ -13,6 +14,13 @@ export class TerminalComponent implements OnInit {
   constructor(
     private appsActivityService: AppActivityService
   ) { }
+
+  windowConfig: IWindowConfig = {
+    title: 'aman@hp: ~/ubuntu-portfolio',
+    width: '40%',
+    height: '40%'
+  }
+
   @ViewChild('inputField') inputField: any;
   history: any[] = []
   input = new FormControl('')

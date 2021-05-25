@@ -1,6 +1,11 @@
 import { Component, ElementRef, EventEmitter, HostListener, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { AppActivityService } from 'src/app/services/app-activity.service';
 
+export interface IWindowConfig {
+  title: string;
+  width?: string;
+  height?: string;
+}
 @Component({
   selector: 'app-window',
   templateUrl: './window.component.html',
@@ -9,12 +14,14 @@ import { AppActivityService } from 'src/app/services/app-activity.service';
 export class WindowComponent implements OnInit {
 
   @Input() template!: any;
-  @Input() title!: string;
+  @Input() config!: IWindowConfig;
   @Output() closed = new EventEmitter();
   constructor(
     private appActService: AppActivityService
   ) { }
   ngOnInit(): void {
+    if(this.config.width) this.width = this.config.width;
+    if(this.config.height) this.height = this.config.height;
   }
   dragPosition = { x: 0, y: 0 };
   width = '70%';

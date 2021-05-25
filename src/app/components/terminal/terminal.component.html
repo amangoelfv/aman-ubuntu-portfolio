@@ -1,4 +1,4 @@
-<app-window title="aman@hp: ~/ubuntu-portfolio" [template]='terminal' (closed)='closeApp()'>
+<app-window [config]="windowConfig" [template]='terminal' (closed)='closeApp()'>
 
   <ng-template #terminal>
     <div (click)='clickAnywhere()' class="terminal-cont width-100 height-100">

@@ -2,10 +2,10 @@ import { Component, Input, OnInit } from '@angular/core';
 import { AppActivityService } from 'src/app/services/app-activity.service';
 import { Apps } from 'src/app/shared/enums/apps.enum';
 import { DomSanitizer } from '@angular/platform-browser';
+import { IWindowConfig } from '../window/window.component';
 
-export interface IWebviewConfig {
+export interface IWebviewConfig extends IWindowConfig {
   url: string;
-  title: string;
   slug: string;
 }
 @Component({
