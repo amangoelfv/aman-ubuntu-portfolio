@@ -24,7 +24,7 @@ export class UbuntuComponent implements OnInit {
   }
   availableApps = Apps;
   background: string = ''
-  appsOpen: string[] = [Apps.ABOUTME];
+  appsOpen: string[] = [];
   apps = [{
     icon: 'https://vivek9patel.github.io/themes/Yaru/apps/chrome.png',
     name: 'Google Chrome',
