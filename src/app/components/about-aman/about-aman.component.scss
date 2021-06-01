@@ -1,0 +1,118 @@
+@import "../../../styles/partials/colors";
+@import "../../../styles/partials/layout";
+@import "../../../styles/partials/fonts";
+
+.nav-list {
+  width: 20%;
+  .selected {
+    background-color: $primaryColor;
+    &:hover {
+      background-color: $primaryColor;
+    }
+  }
+  .deselected {
+    &:hover {
+      background-color: $windowHighlight;
+    }
+  }
+  .nav-item {
+    padding: $medium;
+    transition: 0.1s ease;
+    .nav-icon {
+      width: $large;
+      height: $large;
+      margin-right: $small;
+    }
+  }
+}
+.content-cont {
+  width: 80%;
+  overflow: scroll;
+  background-color: $windowContent;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+.content {
+  padding: $xLarge $medium $large;
+}
+.about-me-cont {
+  .dev-img {
+    width: 20%;
+    border-radius: 50%;
+  }
+  .name {
+    font-size: $blockHeading;
+    font-weight: $bolder;
+    margin: $medium 0 $small;
+  }
+  .position {
+    margin: $small 0 $medium;
+    letter-spacing: 1.5px;
+  }
+  .menu-cont {
+    margin-top: $xxxLarge;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    .highlighted {
+      background-color: $windowHeader;
+      &:hover {
+        background-color: $windowHeader;
+      }
+    }
+    .simple {
+      cursor: pointer;
+      &:hover {
+        background-color: $windowHighlight;
+      }
+    }
+    .link-cont {
+      justify-content: center;
+      padding: $xLarge;
+      border-radius: $small;
+      width: $xxxxxxLarge;
+      margin: $medium;
+      margin: 0 auto;
+
+      .icon {
+        width: $xxxLarge;
+        margin: $medium 0;
+      }
+    }
+  }
+}
+
+.skills-cont {
+  .category {
+    margin: $large 0;
+    .category-label {
+      font-size: $blockHeading;
+      font-weight: $bolder;
+      margin: $medium 0;
+    }
+    .skills-list {
+      margin: $xLarge 0;
+      .skill {
+        width: $xxxxxxLarge;
+        height: $xxxxxxLarge;
+        padding: $medium;
+        border-radius: $small;
+        &:hover {
+          background: $windowHighlight;
+        }
+        .skill-icon {
+          width: $xxxxxLarge;
+          height: $xxxxxLarge;
+          margin-bottom: $medium;
+        }
+        .skill-name {
+          font-weight: $bold;
+          letter-spacing: 1.2px;
+        }
+      }
+    }
+  }
+}

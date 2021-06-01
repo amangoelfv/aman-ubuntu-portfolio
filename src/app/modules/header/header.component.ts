@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  now: Date = new Date();
+  constructor() {
+    setInterval(() => {
+      this.now = new Date();
+    }, 1000);
+  }
 
   date: string = '';
   ngOnInit(): void {
@@ -16,8 +21,7 @@ export class HeaderComponent implements OnInit {
     ];
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
-    const d = new Date();
-    this.date = `${days[d.getDay()]} ${monthNames[d.getMonth()]} ${d.getDate()} ${d.getHours() < 10 ? '0' : ''}${d.getHours()}:${d.getMinutes() < 10 ? '0' : ''}${d.getMinutes()}`;
+    this.date = `${days[this.now.getDay()]} ${monthNames[this.now.getMonth()]} ${this.now.getDate()} ${this.now.getHours() < 10 ? '0' : ''}${this.now.getHours()}:${this.now.getMinutes() < 10 ? '0' : ''}${this.now.getMinutes()}`;
   }
 
 }

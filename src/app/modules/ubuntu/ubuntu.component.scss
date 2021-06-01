@@ -12,6 +12,7 @@
   .apps-cont {
     flex-wrap: wrap-reverse;
     margin-left: auto;
+    z-index: 2;
     .app {
       padding: $xSmall;
       width: $iconWidth;

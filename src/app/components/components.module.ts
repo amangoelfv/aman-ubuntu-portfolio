@@ -8,6 +8,7 @@ import { WebviewComponent } from './webview/webview.component';
 import { ChangeBackgroundComponent } from './change-background/change-background.component';
 import { TerminalComponent } from './terminal/terminal.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AboutAmanComponent } from './about-aman/about-aman.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     WindowComponent,
     WebviewComponent,
     ChangeBackgroundComponent,
-    TerminalComponent
+    TerminalComponent,
+    AboutAmanComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     WebviewComponent,
     ChangeBackgroundComponent,
-    TerminalComponent
+    TerminalComponent,
+    AboutAmanComponent
   ]
 })
 export class ComponentsModule { }

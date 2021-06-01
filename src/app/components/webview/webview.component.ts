@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AppActivityService } from 'src/app/services/app-activity.service';
 import { Apps } from 'src/app/shared/enums/apps.enum';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { IWindowConfig } from '../window/window.component';
 
 export interface IWebviewConfig extends IWindowConfig {
@@ -17,19 +17,16 @@ export class WebviewComponent implements OnInit {
 
   @Input() config!: IWebviewConfig;
 
-  url: string = '';
+  url: SafeResourceUrl = '';
   constructor(
     private sanitizer: DomSanitizer,
     private appsActivityService: AppActivityService
   ) { }
 
   ngOnInit(): void {
-    this.url = this.config.url;
+    this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.config.url);
   }
   closeApp() {
     this.appsActivityService.closeApp(this.config.slug);
-  }
-  getUrl() {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
   }
 }

@@ -24,12 +24,18 @@ export class UbuntuComponent implements OnInit {
   }
   availableApps = Apps;
   background: string = ''
-  appsOpen: string[] = [];
+  appsOpen: string[] = [Apps.ABOUTME];
   apps = [{
     icon: 'https://vivek9patel.github.io/themes/Yaru/apps/chrome.png',
     name: 'Google Chrome',
     slug: Apps.CHROME
-  }]
+  },
+  {
+    icon: 'https://vivek9patel.github.io/themes/Yaru/system/user-home.png',
+    name: 'About Aman',
+    slug: Apps.ABOUTME
+  },
+  ]
   chromeWebviewConfig: IWebviewConfig = {
     slug: Apps.CHROME,
     title: "Google Chrome",

@@ -22,6 +22,7 @@ export class WindowComponent implements OnInit {
   ngOnInit(): void {
     if(this.config.width) this.width = this.config.width;
     if(this.config.height) this.height = this.config.height;
+    if(this.config.width=='100%' && this.config.height=='100%') this.maximized = true;
   }
   dragPosition = { x: 0, y: 0 };
   width = '70%';
@@ -41,8 +42,8 @@ export class WindowComponent implements OnInit {
     this.maximized = true;
   }
   restoreWindow() {
-    this.width = '70%';
-    this.height = '80%'
+    this.width = this.config.width || '70%';
+    this.height = this.config.height || '70%';
     this.maximized = false;
 
   }
