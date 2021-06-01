@@ -61,6 +61,11 @@ export class NavbarComponent implements OnInit {
       icon: 'https://vivek9patel.github.io/themes/Yaru/apps/bash.png',
       name: 'Terminal',
       slug: Apps.TERMINAL
-    }
+    },
+    {
+      icon: 'https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png',
+      name: 'Spotify',
+      slug: Apps.SPOTIFY
+    },
   ]
 }

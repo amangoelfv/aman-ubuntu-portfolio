@@ -12,6 +12,7 @@
       <div class="content-cont">
         <ng-container [ngTemplateOutlet]='about' *ngIf='selected==navbarItems.ABOUTME'></ng-container>
         <ng-container [ngTemplateOutlet]='skills' *ngIf='selected==navbarItems.SKILLS'></ng-container>
+        <ng-container [ngTemplateOutlet]='projects' *ngIf='selected==navbarItems.PROJECTS'></ng-container>
         <iframe *ngIf='selected==navbarItems.RESUME' src='assets/Aman_Goel.pdf#zoom=110' class="width-100 height-100"
           id="chrome-screen" frameborder="0"></iframe>
       </div>
@@ -23,9 +24,14 @@
     <div class="d-flx flx-d-clm a-items-c width-100 height-100 content about-me-cont">
       <img src='/assets/images/dev.png' class="dev-img">
       <p class="name">Aman Goel</p>
-      <p class="position">Web Developer | App Developer | Problem Solver</p>
+      <p class="position">Web Developer | App Developer | Music Lover</p>
+      <p class="position">Electronics & Communication Engineering, NIT Kurukshetra '22</p>
+      <div class="d-flx social">
+        <img *ngFor='let link of socialLinks' [src]='link.icon' (click)='openLink(link.link)' class='social-link c-pointer'>
+      </div>
       <div class="d-grid menu-cont flx-wrp width-100 ">
-        <div class="link-cont d-flx flx-d-clm a-items-c" (click)='changeSelected(item.name)' *ngFor='let item of navList' [ngClass]='item.name==selected ? "highlighted": "simple"'>
+        <div class="link-cont d-flx flx-d-clm a-items-c" (click)='changeSelected(item.name)'
+          *ngFor='let item of navList' [ngClass]='item.name==selected ? "highlighted": "simple"'>
           <img [src]='item.icon' class='icon'>
           <div class="link-title">
             {{item.name}}
@@ -45,6 +51,21 @@
             <p class="skill-name">{{skill.name}}</p>
           </div>
         </div>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #projects>
+    <div class="projects-cont content">
+      <div class="project d-flx a-items-c " *ngFor='let project of myProjects'>
+        <img (click)='openLink(project.link)' [src]='project.icon' alt="" class='project-icon c-pointer'>
+        <div class="details">
+          <div class="name font-bold">{{project.name}}</div>
+          <div class="description">{{project.description}}</div>
+          <div class="d-flx stack">
+            <img *ngFor='let stack of project.techStack' [src]='stack' class='tech'>
+          </div>
+        </div>
+        <img *ngIf='project.source' (click)='openLink(project.source)' src="/assets/icons/github.svg" alt="" class='source-code c-pointer'>
       </div>
     </div>
   </ng-template>

@@ -4,6 +4,7 @@
   <ng-container *ngFor='let app of appsOpen'>
     <app-webview *ngIf='app === availableApps.CHROME' [config]='chromeWebviewConfig'></app-webview>
     <app-webview *ngIf='app === availableApps.VSCODE' [config]='vsCodeWebviewConfig'></app-webview>
+    <app-webview *ngIf='app === availableApps.SPOTIFY' [config]='spotifyWebviewConfig'></app-webview>
     <app-change-background *ngIf='app === availableApps.SETTINGS'></app-change-background>
     <app-terminal *ngIf='app === availableApps.TERMINAL'></app-terminal>
     <app-about-aman *ngIf='app === availableApps.ABOUTME'></app-about-aman>

@@ -46,6 +46,11 @@ export class UbuntuComponent implements OnInit {
     title: "Visual Studio Code",
     url: "https://github1s.com/amangoelfv/aman-ubuntu-portfolio"
   }
+  spotifyWebviewConfig: IWebviewConfig = {
+    slug: Apps.SPOTIFY,
+    title: "Spotify",
+    url: "https://open.spotify.com/embed/playlist/6Q6BD9XS3hrwRTGl5Cgv2i"
+  }
   rightMenuConfig = [
     [
       {

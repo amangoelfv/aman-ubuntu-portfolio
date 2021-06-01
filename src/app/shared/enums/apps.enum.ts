@@ -3,5 +3,6 @@ export enum Apps {
   VSCODE = 'vscode',
   SETTINGS = 'settings',
   TERMINAL = 'terminal',
-  ABOUTME = 'about'
+  ABOUTME = 'about',
+  SPOTIFY = 'spotify'
 }
