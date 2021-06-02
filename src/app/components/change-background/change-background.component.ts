@@ -30,11 +30,11 @@ export class ChangeBackgroundComponent implements OnInit {
   selectedImage: string = '';
   images = [
     '/assets/images/wallpaper1.png',
-    '/assets/images/wallpaper2.jpg',
+    '/assets/images/wallpaper2.png',
     '/assets/images/wallpaper3.png',
     '/assets/images/wallpaper4.png',
-    '/assets/images/wallpaper5.jpg',
-    '/assets/images/wallpaper6.jpg',
+    '/assets/images/wallpaper5.png',
+    '/assets/images/wallpaper6.png',
     '/assets/images/wallpaper7.jpg',
   ]
 

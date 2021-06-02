@@ -173,7 +173,7 @@ export const skills = [
 export const socialLinks = [
   {
     icon: '/assets/icons/linkedin.svg',
-    link: 'https://linkedin.com/amangoelfv'
+    link: 'https://linkedin.com/in/amangoelfv'
   },
   {
     icon: '/assets/icons/github.svg',
