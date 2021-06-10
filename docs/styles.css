@@ -1,0 +1,333 @@
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap);
+/* For grid layout we have to use generic size for margin and padding */
+/* These lengths are multiple of 8 where 4px and 12px are exceptions */
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  -webkit-user-select: none;
+          user-select: none;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+}
+html {
+  scroll-behavior: smooth;
+  background-color: #333333;
+}
+.font-italic {
+  font-style: italic;
+}
+.font-bold {
+  font-weight: 500;
+}
+.z-index-top {
+  z-index: 100000;
+}
+.font-bolder {
+  font-weight: 600;
+}
+.font-boldest {
+  font-weight: 700;
+}
+.text-color-dark {
+  color: #111111;
+}
+.text-color-white {
+  color: #fff;
+}
+.background-light-primary {
+  background-color: #fff5ea;
+}
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+.error-message {
+  color: #d0021b;
+  font-size: 14px;
+}
+img {
+  max-width: 100%;
+}
+.c-pointer {
+  cursor: pointer;
+}
+.text-line-through {
+  text-decoration: line-through;
+}
+.c-not-allowed {
+  cursor: not-allowed;
+}
+.text-c {
+  text-align: center;
+}
+.position-fixed {
+  position: fixed;
+}
+.position-absolute {
+  position: absolute;
+}
+.text-right {
+  text-align: right;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.589);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 2s ease;
+}
+.app-container {
+  background-color: #fff;
+}
+.app-container-pd {
+  padding: 30px 0 0;
+}
+.section-container {
+  padding: 24px 8px;
+  max-width: 1260px;
+  margin: auto;
+}
+.app-lq-container {
+  width: 100%;
+}
+.show-mob,
+.show-mob-tab,
+d-block {
+  display: block;
+}
+.show-mob-flx,
+.show-mob-tab-flx {
+  display: flex;
+}
+.show-desk,
+.show-tab-desk,
+.show-desk-flx,
+.show-tab-desk-flx,
+.hide {
+  display: none;
+}
+.text-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.overflow-y-mob {
+  overflow-y: scroll;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+/* flex custom css :: Start */
+.d-flx {
+  display: flex;
+}
+.flx-d-row,
+.flx-d-row-clm {
+  flex-direction: row;
+}
+.flx-d-clm,
+.flx-d-clm-row {
+  flex-direction: column;
+}
+.flx-1 {
+  flex: 1;
+}
+.flx-2 {
+  flex: 2;
+}
+.flx-3 {
+  flex: 3;
+}
+.flx-4 {
+  flex: 4;
+}
+.flx-5 {
+  flex: 5;
+}
+.flx-6 {
+  flex: 6;
+}
+.flx-7 {
+  flex: 7;
+}
+.flx-8 {
+  flex: 8;
+}
+.flx-wrp {
+  flex-wrap: wrap;
+}
+.a-items-start {
+  align-items: flex-start;
+}
+.a-items-c {
+  align-items: center;
+}
+.a-items-e {
+  align-items: flex-end;
+}
+.a-items-b {
+  align-items: baseline;
+}
+.a-items-stretch {
+  align-items: stretch;
+}
+.a-self-stretch {
+  align-self: stretch;
+}
+.j-cont-cen {
+  justify-content: center;
+}
+.j-cont-end {
+  justify-content: flex-end;
+}
+.j-cont-space-bet {
+  justify-content: space-between;
+}
+.flx-gap-16 {
+  gap: 16px;
+}
+.flx-gap-32 {
+  gap: 32px;
+}
+/* flex custom css :: End */
+.d-grid {
+  display: grid;
+}
+.d-inline-block {
+  display: inline-block;
+}
+/* heading generic CSS :: Start */
+.logo {
+  font-weight: 700;
+  font-size: 40px;
+}
+.section-header {
+  margin-bottom: 24px;
+}
+.section-header .section-heading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.section-header .section-subheading {
+  color: #757575;
+  font-size: 14px;
+}
+.modal-heading {
+  font-size: 26px;
+  font-weight: 600;
+}
+.intro-heading {
+  font-size: 20px;
+  font-weight: 500;
+}
+.gb-heading {
+  color: #111111;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 8px 0;
+}
+.description {
+  color: #757575;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.light-subheading {
+  color: #90a4ae;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.sub-heading {
+  color: #111111;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.lb-heading,
+.lb-heading-small {
+  color: #111111;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.lb-sub-heading {
+  color: #90a4ae;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.para {
+  color: #111111;
+  font-size: 12px;
+  line-height: 16px;
+}
+/* heading generic CSS :: End */
+.height-100 {
+  height: 100%;
+}
+.width-100 {
+  width: 100%;
+}
+img:not([src]), img[src="//:0"] {
+  opacity: 0;
+}
+.image-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width : 720px) {
+  .section-container {
+    padding: 48px 12px;
+  }
+  .section-container .section-header .section-heading {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+  .section-container .section-header .section-subheading {
+    font-size: 16px;
+  }
+
+  .show-mob {
+    display: none;
+  }
+
+  .show-tab-desk {
+    display: block;
+  }
+
+  .show-tab-desk-flx {
+    display: flex;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  .show-desk {
+    display: block;
+  }
+
+  .show-desk-flx {
+    display: flex;
+  }
+}
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map*/
