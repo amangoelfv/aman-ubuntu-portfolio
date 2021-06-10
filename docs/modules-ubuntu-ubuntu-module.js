@@ -5130,7 +5130,7 @@ class AboutAmanComponent {
             },
             {
                 name: NavbarItems.SKILLS,
-                icon: '/assets/icons/skills.svg'
+                icon: 'assets/icons/skills.svg'
             },
             {
                 name: NavbarItems.RESUME,
@@ -5158,7 +5158,7 @@ class AboutAmanComponent {
     }
 }
 AboutAmanComponent.ɵfac = function AboutAmanComponent_Factory(t) { return new (t || AboutAmanComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_app_activity_service__WEBPACK_IMPORTED_MODULE_3__["AppActivityService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"])); };
-AboutAmanComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutAmanComponent, selectors: [["app-about-aman"]], decls: 9, vars: 2, consts: [[3, "config", "template", "closed"], ["terminal", ""], ["about", ""], ["skills", ""], ["projects", ""], [1, "d-flx", "width-100", "height-100", "overflow-hidden"], [1, "nav-list"], ["class", "nav-item d-flx", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "content-cont"], [3, "ngTemplateOutlet", 4, "ngIf"], ["src", "assets/Aman_Goel.pdf#zoom=110", "class", "width-100 height-100", "id", "chrome-screen", "frameborder", "0", 4, "ngIf"], [1, "nav-item", "d-flx", 3, "ngClass", "click"], [1, "nav-icon", 3, "src"], [1, "nav-title"], [3, "ngTemplateOutlet"], ["src", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtrustConstantResourceUrl"]("assets/Aman_Goel.pdf#zoom=110"), "id", "chrome-screen", "frameborder", "0", 1, "width-100", "height-100"], [1, "d-flx", "flx-d-clm", "a-items-c", "width-100", "height-100", "content", "about-me-cont"], ["src", "/assets/images/dev.png", 1, "dev-img"], [1, "name"], [1, "position"], [1, "d-flx", "social"], ["class", "social-link c-pointer", 3, "src", "click", 4, "ngFor", "ngForOf"], [1, "d-grid", "menu-cont", "flx-wrp", "width-100"], ["class", "link-cont d-flx flx-d-clm a-items-c", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "social-link", "c-pointer", 3, "src", "click"], [1, "link-cont", "d-flx", "flx-d-clm", "a-items-c", 3, "ngClass", "click"], [1, "icon", 3, "src"], [1, "link-title"], [1, "skills-cont", "content"], ["class", "category", 4, "ngFor", "ngForOf"], [1, "category"], [1, "category-label"], [1, "skills-list", "d-flx", "flx-wrp"], ["class", "skill d-flx flx-d-clm j-cont-cen a-items-c", 4, "ngFor", "ngForOf"], [1, "skill", "d-flx", "flx-d-clm", "j-cont-cen", "a-items-c"], [1, "skill-icon", 3, "src"], [1, "skill-name"], [1, "projects-cont", "content"], ["class", "project d-flx a-items-c ", 4, "ngFor", "ngForOf"], [1, "project", "d-flx", "a-items-c"], ["alt", "", 1, "project-icon", "c-pointer", 3, "src", "click"], [1, "details"], [1, "name", "font-bold"], [1, "description"], [1, "d-flx", "stack"], ["class", "tech", 3, "src", 4, "ngFor", "ngForOf"], ["src", "/assets/icons/github.svg", "alt", "", "class", "source-code c-pointer", 3, "click", 4, "ngIf"], [1, "tech", 3, "src"], ["src", "/assets/icons/github.svg", "alt", "", 1, "source-code", "c-pointer", 3, "click"]], template: function AboutAmanComponent_Template(rf, ctx) { if (rf & 1) {
+AboutAmanComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutAmanComponent, selectors: [["app-about-aman"]], decls: 9, vars: 2, consts: [[3, "config", "template", "closed"], ["terminal", ""], ["about", ""], ["skills", ""], ["projects", ""], [1, "d-flx", "width-100", "height-100", "overflow-hidden"], [1, "nav-list"], ["class", "nav-item d-flx", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "content-cont"], [3, "ngTemplateOutlet", 4, "ngIf"], ["src", "assets/Aman_Goel.pdf#zoom=110", "class", "width-100 height-100", "id", "chrome-screen", "frameborder", "0", 4, "ngIf"], [1, "nav-item", "d-flx", 3, "ngClass", "click"], [1, "nav-icon", 3, "src"], [1, "nav-title"], [3, "ngTemplateOutlet"], ["src", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtrustConstantResourceUrl"]("assets/Aman_Goel.pdf#zoom=110"), "id", "chrome-screen", "frameborder", "0", 1, "width-100", "height-100"], [1, "d-flx", "flx-d-clm", "a-items-c", "width-100", "height-100", "content", "about-me-cont"], ["src", "assets/images/dev.png", 1, "dev-img"], [1, "name"], [1, "position"], [1, "d-flx", "social"], ["class", "social-link c-pointer", 3, "src", "click", 4, "ngFor", "ngForOf"], [1, "d-grid", "menu-cont", "flx-wrp", "width-100"], ["class", "link-cont d-flx flx-d-clm a-items-c", 3, "ngClass", "click", 4, "ngFor", "ngForOf"], [1, "social-link", "c-pointer", 3, "src", "click"], [1, "link-cont", "d-flx", "flx-d-clm", "a-items-c", 3, "ngClass", "click"], [1, "icon", 3, "src"], [1, "link-title"], [1, "skills-cont", "content"], ["class", "category", 4, "ngFor", "ngForOf"], [1, "category"], [1, "category-label"], [1, "skills-list", "d-flx", "flx-wrp"], ["class", "skill d-flx flx-d-clm j-cont-cen a-items-c", 4, "ngFor", "ngForOf"], [1, "skill", "d-flx", "flx-d-clm", "j-cont-cen", "a-items-c"], [1, "skill-icon", 3, "src"], [1, "skill-name"], [1, "projects-cont", "content"], ["class", "project d-flx a-items-c ", 4, "ngFor", "ngForOf"], [1, "project", "d-flx", "a-items-c"], ["alt", "", 1, "project-icon", "c-pointer", 3, "src", "click"], [1, "details"], [1, "name", "font-bold"], [1, "description"], [1, "d-flx", "stack"], ["class", "tech", 3, "src", 4, "ngFor", "ngForOf"], ["src", "/assets/icons/github.svg", "alt", "", "class", "source-code c-pointer", 3, "click", 4, "ngIf"], [1, "tech", 3, "src"], ["src", "/assets/icons/github.svg", "alt", "", 1, "source-code", "c-pointer", 3, "click"]], template: function AboutAmanComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "app-window", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("closed", function AboutAmanComponent_Template_app_window_closed_0_listener() { return ctx.closeApp(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, AboutAmanComponent_ng_template_1_Template, 8, 5, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
@@ -7571,13 +7571,13 @@ class ChangeBackgroundComponent {
         };
         this.selectedImage = '';
         this.images = [
-            '/assets/images/wallpaper1.png',
-            '/assets/images/wallpaper2.png',
-            '/assets/images/wallpaper3.png',
-            '/assets/images/wallpaper4.png',
-            '/assets/images/wallpaper5.png',
-            '/assets/images/wallpaper6.png',
-            '/assets/images/wallpaper7.jpg',
+            'assets/images/wallpaper1.png',
+            'assets/images/wallpaper2.png',
+            'assets/images/wallpaper3.png',
+            'assets/images/wallpaper4.png',
+            'assets/images/wallpaper5.png',
+            'assets/images/wallpaper6.png',
+            'assets/images/wallpaper7.jpg',
         ];
     }
     ngOnInit() {
@@ -13545,7 +13545,7 @@ __webpack_require__.r(__webpack_exports__);
 const Projects = [
     {
         name: 'Gropik',
-        icon: '/assets/icons/gropik.png',
+        icon: 'assets/icons/gropik.png',
         description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.',
         techStack: [
             'https://shields.io/badge/-Angular-red?logo=angular&style=for-the-badge&logoColor=white',
@@ -13557,7 +13557,7 @@ const Projects = [
     },
     {
         name: 'Ubuntu Portfolio',
-        icon: '/assets/icons/ubuntu-portfolio.png',
+        icon: 'assets/icons/ubuntu-portfolio.png',
         description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.Labore ea nulla aliquip laboris velit anim ea ex laboris laborum dolor.',
         techStack: [
             'https://shields.io/badge/-Angular-red?logo=angular&style=for-the-badge&logoColor=white',
@@ -13582,7 +13582,7 @@ const Projects = [
     },
     {
         name: 'Clinics Admin',
-        icon: '/assets/icons/clinics.png',
+        icon: 'assets/icons/clinics.png',
         description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.Labore ea nulla aliquip laboris velit anim ea ex laboris laborum dolor.',
         techStack: [
             'https://shields.io/badge/-React--Native-61DBFB?logo=react&style=for-the-badge&logoColor=black',
@@ -13595,7 +13595,7 @@ const Projects = [
     },
     {
         name: 'Corona Suraksha',
-        icon: '/assets/icons/corona-suraksha.png',
+        icon: 'assets/icons/corona-suraksha.png',
         description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.Labore ea nulla aliquip laboris velit anim ea ex laboris laborum dolor.',
         techStack: [
             'https://shields.io/badge/-ReactNative-61DBFB?logo=react&style=for-the-badge&logoColor=black',
@@ -13606,7 +13606,7 @@ const Projects = [
     },
     {
         name: 'Uttam Aujus',
-        icon: '/assets/icons/uttam-aujus.png',
+        icon: 'assets/icons/uttam-aujus.png',
         description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.Labore ea nulla aliquip laboris velit anim ea ex laboris laborum dolor.',
         techStack: [
             'https://shields.io/badge/-ReactNative-61DBFB?logo=react&style=for-the-badge&logoColor=black',
@@ -13622,19 +13622,19 @@ const skills = [
         category: 'Languages',
         data: [
             {
-                icon: '/assets/images/skills/c.png',
+                icon: 'assets/images/skills/c.png',
                 name: 'C'
             },
             {
-                icon: '/assets/images/skills/cpp.png',
+                icon: 'assets/images/skills/cpp.png',
                 name: 'C++'
             },
             {
-                icon: '/assets/images/skills/js.png',
+                icon: 'assets/images/skills/js.png',
                 name: 'JavaScript'
             },
             {
-                icon: '/assets/images/skills/ts.png',
+                icon: 'assets/images/skills/ts.png',
                 name: 'TypeScript'
             },
         ]
@@ -13643,19 +13643,19 @@ const skills = [
         category: 'Web Development',
         data: [
             {
-                icon: '/assets/images/skills/angular.png',
+                icon: 'assets/images/skills/angular.png',
                 name: 'Angular'
             },
             {
-                icon: '/assets/images/skills/html.png',
+                icon: 'assets/images/skills/html.png',
                 name: 'HTML'
             },
             {
-                icon: '/assets/images/skills/css.png',
+                icon: 'assets/images/skills/css.png',
                 name: 'CSS'
             },
             {
-                icon: '/assets/images/skills/scss.png',
+                icon: 'assets/images/skills/scss.png',
                 name: 'SCSS'
             },
         ]
@@ -13664,11 +13664,11 @@ const skills = [
         category: 'App Development',
         data: [
             {
-                icon: '/assets/images/skills/react.png',
+                icon: 'assets/images/skills/react.png',
                 name: 'React Native'
             },
             {
-                icon: '/assets/images/skills/ionic.png',
+                icon: 'assets/images/skills/ionic.png',
                 name: 'Ionic'
             },
         ]
@@ -13677,27 +13677,27 @@ const skills = [
         category: 'Tools',
         data: [
             {
-                icon: '/assets/images/skills/firebase.png',
+                icon: 'assets/images/skills/firebase.png',
                 name: 'Firebase'
             },
             {
-                icon: '/assets/images/skills/nodejs.png',
+                icon: 'assets/images/skills/nodejs.png',
                 name: 'NodeJS'
             },
             {
-                icon: '/assets/images/skills/mongo.png',
+                icon: 'assets/images/skills/mongo.png',
                 name: 'MongoDB'
             },
             {
-                icon: '/assets/images/skills/git.png',
+                icon: 'assets/images/skills/git.png',
                 name: 'Git'
             },
             {
-                icon: '/assets/images/skills/matlab.png',
+                icon: 'assets/images/skills/matlab.png',
                 name: 'Matlab'
             },
             {
-                icon: '/assets/images/skills/redux.png',
+                icon: 'assets/images/skills/redux.png',
                 name: 'Redux'
             },
         ]
@@ -13705,15 +13705,15 @@ const skills = [
 ];
 const socialLinks = [
     {
-        icon: '/assets/icons/linkedin.svg',
+        icon: 'assets/icons/linkedin.svg',
         link: 'https://linkedin.com/in/amangoelfv'
     },
     {
-        icon: '/assets/icons/github.svg',
+        icon: 'assets/icons/github.svg',
         link: 'https://github.com/amangoelfv'
     },
     {
-        icon: '/assets/icons/gmail.svg',
+        icon: 'assets/icons/gmail.svg',
         link: 'mailto:amangoel300@gmail.com?subject=Visitor from your site!&body=Hi Aman! \nI just saw your site and .....'
     },
 ];
@@ -14405,7 +14405,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const defaultWallpaper = '/assets/images/wallpaper1.png';
+const defaultWallpaper = 'assets/images/wallpaper1.png';
 class WallpaperService {
     constructor() {
         this.wallpaperChanged = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"](defaultWallpaper);

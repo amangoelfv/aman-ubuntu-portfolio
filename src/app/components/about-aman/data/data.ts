@@ -10,7 +10,7 @@ export interface IProject {
 export const Projects: IProject[] = [
   {
     name: 'Gropik',
-    icon: '/assets/icons/gropik.png',
+    icon: 'assets/icons/gropik.png',
     description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.',
     techStack: [
       'https://shields.io/badge/-Angular-red?logo=angular&style=for-the-badge&logoColor=white',
@@ -22,7 +22,7 @@ export const Projects: IProject[] = [
   },
   {
     name: 'Ubuntu Portfolio',
-    icon: '/assets/icons/ubuntu-portfolio.png',
+    icon: 'assets/icons/ubuntu-portfolio.png',
     description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.Labore ea nulla aliquip laboris velit anim ea ex laboris laborum dolor.',
     techStack: [
       'https://shields.io/badge/-Angular-red?logo=angular&style=for-the-badge&logoColor=white',
@@ -47,7 +47,7 @@ export const Projects: IProject[] = [
   },
   {
     name: 'Clinics Admin',
-    icon: '/assets/icons/clinics.png',
+    icon: 'assets/icons/clinics.png',
     description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.Labore ea nulla aliquip laboris velit anim ea ex laboris laborum dolor.',
     techStack: [
       'https://shields.io/badge/-React--Native-61DBFB?logo=react&style=for-the-badge&logoColor=black',
@@ -60,7 +60,7 @@ export const Projects: IProject[] = [
   },
   {
     name: 'Corona Suraksha',
-    icon: '/assets/icons/corona-suraksha.png',
+    icon: 'assets/icons/corona-suraksha.png',
     description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.Labore ea nulla aliquip laboris velit anim ea ex laboris laborum dolor.',
     techStack: [
       'https://shields.io/badge/-ReactNative-61DBFB?logo=react&style=for-the-badge&logoColor=black',
@@ -71,7 +71,7 @@ export const Projects: IProject[] = [
   },
   {
     name: 'Uttam Aujus',
-    icon: '/assets/icons/uttam-aujus.png',
+    icon: 'assets/icons/uttam-aujus.png',
     description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.Labore ea nulla aliquip laboris velit anim ea ex laboris laborum dolor.',
     techStack: [
       'https://shields.io/badge/-ReactNative-61DBFB?logo=react&style=for-the-badge&logoColor=black',
@@ -88,19 +88,19 @@ export const skills = [
     category: 'Languages',
     data: [
       {
-        icon: '/assets/images/skills/c.png',
+        icon: 'assets/images/skills/c.png',
         name: 'C'
       },
       {
-        icon: '/assets/images/skills/cpp.png',
+        icon: 'assets/images/skills/cpp.png',
         name: 'C++'
       },
       {
-        icon: '/assets/images/skills/js.png',
+        icon: 'assets/images/skills/js.png',
         name: 'JavaScript'
       },
       {
-        icon: '/assets/images/skills/ts.png',
+        icon: 'assets/images/skills/ts.png',
         name: 'TypeScript'
       },
     ]
@@ -110,19 +110,19 @@ export const skills = [
     category: 'Web Development',
     data: [
       {
-        icon: '/assets/images/skills/angular.png',
+        icon: 'assets/images/skills/angular.png',
         name: 'Angular'
       },
       {
-        icon: '/assets/images/skills/html.png',
+        icon: 'assets/images/skills/html.png',
         name: 'HTML'
       },
       {
-        icon: '/assets/images/skills/css.png',
+        icon: 'assets/images/skills/css.png',
         name: 'CSS'
       },
       {
-        icon: '/assets/images/skills/scss.png',
+        icon: 'assets/images/skills/scss.png',
         name: 'SCSS'
       },
     ]
@@ -131,11 +131,11 @@ export const skills = [
     category: 'App Development',
     data: [
       {
-        icon: '/assets/images/skills/react.png',
+        icon: 'assets/images/skills/react.png',
         name: 'React Native'
       },
       {
-        icon: '/assets/images/skills/ionic.png',
+        icon: 'assets/images/skills/ionic.png',
         name: 'Ionic'
       },
     ]
@@ -144,27 +144,27 @@ export const skills = [
     category: 'Tools',
     data: [
       {
-        icon: '/assets/images/skills/firebase.png',
+        icon: 'assets/images/skills/firebase.png',
         name: 'Firebase'
       },
       {
-        icon: '/assets/images/skills/nodejs.png',
+        icon: 'assets/images/skills/nodejs.png',
         name: 'NodeJS'
       },
       {
-        icon: '/assets/images/skills/mongo.png',
+        icon: 'assets/images/skills/mongo.png',
         name: 'MongoDB'
       },
       {
-        icon: '/assets/images/skills/git.png',
+        icon: 'assets/images/skills/git.png',
         name: 'Git'
       },
       {
-        icon: '/assets/images/skills/matlab.png',
+        icon: 'assets/images/skills/matlab.png',
         name: 'Matlab'
       },
       {
-        icon: '/assets/images/skills/redux.png',
+        icon: 'assets/images/skills/redux.png',
         name: 'Redux'
       },
     ]
@@ -172,15 +172,15 @@ export const skills = [
 ]
 export const socialLinks = [
   {
-    icon: '/assets/icons/linkedin.svg',
+    icon: 'assets/icons/linkedin.svg',
     link: 'https://linkedin.com/in/amangoelfv'
   },
   {
-    icon: '/assets/icons/github.svg',
+    icon: 'assets/icons/github.svg',
     link: 'https://github.com/amangoelfv'
   },
   {
-    icon: '/assets/icons/gmail.svg',
+    icon: 'assets/icons/gmail.svg',
     link: 'mailto:amangoel300@gmail.com?subject=Visitor from your site!&body=Hi Aman! \nI just saw your site and .....'
   },
 ]

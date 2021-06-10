@@ -43,7 +43,7 @@ export class AboutAmanComponent implements OnInit {
     },
     {
       name: NavbarItems.SKILLS,
-      icon: '/assets/icons/skills.svg'
+      icon: 'assets/icons/skills.svg'
     },
     {
       name: NavbarItems.RESUME,
