@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Subject } from 'rxjs';
 
-const defaultWallpaper = '/assets/images/wallpaper1.png'
+const defaultWallpaper = 'assets/images/wallpaper1.png'
 @Injectable({
   providedIn: 'root'
 })

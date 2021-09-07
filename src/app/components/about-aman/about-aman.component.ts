@@ -8,7 +8,6 @@ import { IProject, Projects, skills, socialLinks } from './data/data';
 export enum NavbarItems {
   ABOUTME = 'About Me',
   EDUCATION = 'Education',
-  EXPERIENCE = 'Experience',
   SKILLS = 'Skills',
   PROJECTS = 'Projects',
   RESUME = 'Resume',
@@ -34,16 +33,12 @@ export class AboutAmanComponent implements OnInit {
       icon: 'assets/icons/about.svg'
     },
     {
-      name: NavbarItems.EXPERIENCE,
-      icon: 'assets/icons/experience.svg'
-    },
-    {
       name: NavbarItems.PROJECTS,
       icon: 'assets/icons/project.svg'
     },
     {
       name: NavbarItems.SKILLS,
-      icon: '/assets/icons/skills.svg'
+      icon: 'assets/icons/skills.svg'
     },
     {
       name: NavbarItems.RESUME,
