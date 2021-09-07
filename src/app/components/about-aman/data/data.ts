@@ -114,6 +114,10 @@ export const skills = [
         name: 'Angular'
       },
       {
+        icon: 'assets/images/skills/react.png',
+        name: 'React'
+      },
+      {
         icon: 'assets/images/skills/html.png',
         name: 'HTML'
       },
