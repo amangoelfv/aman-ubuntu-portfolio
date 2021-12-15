@@ -11,7 +11,7 @@ export const Projects: IProject[] = [
   {
     name: 'Gropik',
     icon: 'assets/icons/gropik.png',
-    description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.',
+    description: 'A e-commerce site where users can place orders to their nearby shops and pick them whenever they want without worrying about queues and contacts.',
     techStack: [
       'https://shields.io/badge/-Angular-red?logo=angular&style=for-the-badge&logoColor=white',
       'https://shields.io/badge/-TypeScript-3178C6?logo=typescript&style=for-the-badge&logoColor=white',
@@ -23,7 +23,7 @@ export const Projects: IProject[] = [
   {
     name: 'Ubuntu Portfolio',
     icon: 'assets/icons/ubuntu-portfolio.png',
-    description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.Labore ea nulla aliquip laboris velit anim ea ex laboris laborum dolor.',
+    description: 'This is my portfolio site which is a wannabe replica of the Ubuntu 20.04 Operating System.',
     techStack: [
       'https://shields.io/badge/-Angular-red?logo=angular&style=for-the-badge&logoColor=white',
       'https://shields.io/badge/-TypeScript-3178C6?logo=typescript&style=for-the-badge&logoColor=white',
@@ -48,7 +48,7 @@ export const Projects: IProject[] = [
   {
     name: 'Clinics Admin',
     icon: 'assets/icons/clinics.png',
-    description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.Labore ea nulla aliquip laboris velit anim ea ex laboris laborum dolor.',
+    description: 'An application for a hospital management system, completely equipped with New Reciept, Patient Logs, Lab & Dispensary Records.',
     techStack: [
       'https://shields.io/badge/-React--Native-61DBFB?logo=react&style=for-the-badge&logoColor=black',
       'https://shields.io/badge/-Node--JS-339933?logo=nodedotjs&style=for-the-badge&logoColor=black',
@@ -61,7 +61,7 @@ export const Projects: IProject[] = [
   {
     name: 'Corona Suraksha',
     icon: 'assets/icons/corona-suraksha.png',
-    description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.Labore ea nulla aliquip laboris velit anim ea ex laboris laborum dolor.',
+    description: 'A mobile application to graphically see the statistics of COVID-19 in India & Other countries',
     techStack: [
       'https://shields.io/badge/-ReactNative-61DBFB?logo=react&style=for-the-badge&logoColor=black',
       'https://shields.io/badge/-Javascript-f0db4f?logo=javascript&style=for-the-badge&logoColor=black',
@@ -72,7 +72,7 @@ export const Projects: IProject[] = [
   {
     name: 'Uttam Aujus',
     icon: 'assets/icons/uttam-aujus.png',
-    description: 'Excepteur voluptate tempor duis ea adipisicing elit dolore anim minim.Commodo sint cillum velit nisi.Labore ea nulla aliquip laboris velit anim ea ex laboris laborum dolor.',
+    description: 'Part of Hardware productathon, E-Summit, IIT Roorkee. An IOT device which senses a car accident and send alert using dedicated app to nearby users, hospitals and family members for rescue.',
     techStack: [
       'https://shields.io/badge/-ReactNative-61DBFB?logo=react&style=for-the-badge&logoColor=black',
       'https://shields.io/badge/-firebase-FFCA28?logo=firebase&style=for-the-badge&logoColor=black',
